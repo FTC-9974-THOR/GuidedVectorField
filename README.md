@@ -5,11 +5,12 @@ GVF code lives in the RBGVFNavigation class. Vector2 is for basic
 cubic bezier curves. Everything else in this project is to support
 the demo functionality.
 
-The demo by default runs in screensaver mode, and will display
-fields for randomly generated Bezier curves. Clicking on the demo
-will toggle to interactive mode, which will freeze the current
+The demo by default runs in interactive mode, which will freeze the current
 curve and allow you to see the guidance vector at the position
-of your mouse. The transition between screensaver and interactive
+of your mouse. Clicking will toggle between interactive and screensaver mode.
+In screensaver mode, the demo will display fields for randomly
+generated Bezier curves.
+The transition between screensaver and interactive
 mode is a bit buggy :/. If you want to use this code in FTC,
 you should be able to just copy CubicBezierCurve, RBGVFNavigation,
 and Vector2 into your code.

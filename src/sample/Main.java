@@ -42,6 +42,8 @@ public class Main extends Application {
         primaryStage.setFullScreen(true);
         primaryStage.show();
 
+        interactive = true;
+
         Canvas canvas = (Canvas) root.lookup("#canvas");
         if (canvas == null) {
             System.out.println("Null canvas");
@@ -53,6 +55,9 @@ public class Main extends Application {
         cY = canvas.getHeight();
         rbgvfNavigation = new RBGVFNavigation();
 
+        // These are the default control points for the initial path.
+        // if you want to try out this demo with a path of your own,
+        // change these vector to match the bezier curve you want.
         p0 = new Vector2(800, 50);
         p1 = new Vector2(800, 100);
         p2 = new Vector2(600, 400);
